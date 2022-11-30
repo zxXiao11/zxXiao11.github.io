@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="Anthor" content="Zixuan"/>
+    <meta name="Keywords" content="关键词 搜索引擎抓取">
+    <meta name="Description" content="网站简介 描述">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Zixuan Xiao's Homepage</title>
+
+    <style>
+        body, h1, h2, h3, h4, h5, h6, p, dd {
+            margin: 0;
+        }
+
+        ul, ol, dl {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        img {
+            border: none;
+            vertical-align: middle;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            outline: none;
+        }
+
+        body {
+            font: 22px/1.4 "Helvetica Neue", sans-serif;
+            font-weight: 200;
+        }
+
+        h2{
+            font: 26px;
+            font-weight: 300;
+        }
+
+        ul > li {
+            margin: 5px 0;
+        }
+
+        h3 {
+            color: rgb(43, 68, 194);
+            font-size: 26px;
+            font-weight: 200;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: rgb(0, 79, 241);
+        }
+        .textHighlight {
+            position: relative;
+            /* font-weight: bold; */
+            /* text-decoration: underline rgb(75, 172, 223) ; */
+            /* color: rgb(75, 172, 223); */
+        }
+        .textHighlight:after {
+            content: '';
+            position: absolute;
+            top: 93%;
+            left: -0.1em;
+            right: -0.1em;
+            bottom: 0;
+            transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+            /* background-color: rgba(225, 166, 121, 0.5); */
+            background-color: rgba(75, 172, 223);
+        }
+        /* .textHighlight:hover { */
+            /* background-color: rgba(75, 172, 223, 0.4); */
+            /* cursor: pointer; */
+        /* } */
+        .textHighlight:hover:after {
+            background-color: rgba(75, 172, 223, 0.4);
+            top: 0%;
+            cursor: pointer;
+        }
+        .mainContainer {
+            width: 1000px;
+            margin: 5px auto;
+            padding: 20px;
+        }
+        /* .mainContainer:hover {
+            box-shadow: 0px 0px 2px 3px #eee;
+        } */
+        .headerContainer {
+            display: flex;
+            margin-bottom: 20px;
+            margin-left: 30px;
+        }
+
+        .headerContainer .photo {
+            width: 145px;
+            height: 200px;
+            /* border-radius: 50%; */
+            overflow: hidden;
+        }
+        /* .headerContainer .photo:hover {
+            box-shadow: 0px 0px 2px 3px #ccc;
+        } */
+        
+        .headerContainer .status {
+            margin: 15px 50px;
+        }
+
+        .mainInfo {
+            margin-left: 30px;
+        }
+        .mainInfo .biography > p{
+            text-align: justify; 
+        }
+        .mainInfo section {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .mainInfo .education ul>li{
+            overflow: auto;
+        }
+        .mainInfo .education ul>li .school{
+            float: left;
+        }
+        .mainInfo .education ul>li .date{
+            float: right;
+        }
+        .mainInfo .news ul {
+            list-style: disc;
+            margin-left: 18px;
+        }
+        .mainInfo .publications ul > li {
+            display: flex;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+        .mainInfo .publications ul > li img{
+            margin-bottom: 10px;
+        }
+        .mainInfo .publications ul > li img:hover {
+            transform: scale(1.1);
+            transition-duration: 1.5s;
+        }
+        .mainInfo .publications ul > li .description {
+            margin-left: 30px;
+            margin-bottom: 10px;
+            max-width: 590px;
+            text-align: justify;
+        }
+        .mainInfo .publications ul > li .description > div {
+            margin: 5px 0;
+        }
+        .mainInfo .publications .description .paperTitle{
+            font-size: 20px;
+            font-weight: 600;
+            font-style: italic;
+        }
+        .mainInfo .publications .description .author{
+            font-size: 18px;
+            font-weight: 200;
+        }
+        .mainInfo .publications .description .paperGroup{
+            font-size: 18px;
+            font-weight: 200;
+            font-style: italic;
+        }
+        .mainInfo .publications .description .paperResource{
+            font-size: 18px;
+            font-weight: 200;
+        }
+        .mainInfo .Miscellaneous {
+            margin-top: 30px;
+        }
+        .mainInfo .Miscellaneous ul > li{
+            font-size: 20px;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="/css/index.css" />
+
+</head>
+<body>
+    <div class="mainContainer">
+        <header class="headerContainer">
+            <div class="photo">
+                <img src="./asserts/img/photo.jpg" alt="photo" width="145" height="200"/>
+            </div>
+            <section class="status">
+                <div class="social">
+                    <ul>
+                        <li><h2>Zixuan Xiao（肖子轩）</h2></li>
+                        <li><a class = "textHighlight" href="mailto:shane9xiao@gmail.com">Email</a></li>
+                        <li><a class = "textHighlight" href="https://scholar.google.com/citations?hl=zh-CN&user=kTrmB_sAAAAJ&view_op=list_works&authuser=1&gmla=AJsN-F6yhC2etjov3vvh6TyKv0_u8qaUYh9M_p66rznemnhJ5wSZiJDTBBFyn9mJKYNMpvJPBIv8Fq7WtTBq6VITUbqQ64BY7J7zMZ4T7HifVkB-CRU_Nh4" target="_blank">Google Scholar</a></li>
+                        <li><a class = "textHighlight" href="https://github.com/zxXiao11" target="_blank">Github</a></li>
+                        <li><a class = "textHighlight" href="./asserts/cv/ZixuanXiao.pdf" target="_blank">CV</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="current_status">Looking for a...</div> -->
+            </section>
+        </header>
+        <main class="mainInfo">
+            <section class="biography">
+                <h3>Biography</h3>
+                <p>
+                   I am currently a data scientist at China Guangfa Bank (CGB). 
+                   Before that, I received my B.S and M.Eng degrees at 
+                   <a class = "textHighlight" href="https://www.bit.edu.cn/" target="_blank">Beijing Institute of Technology</a> 
+                   and <a class = "textHighlight" href="https://www.nudt.edu.cn/" target="_blank">National University of Defense Technology</a>, under the supervision 
+                   of Prof. Hua Wang and Prof. Ping Zhong in 2018 and 2020 respectively.
+                   My research interests focus on remote sensing, computer vision and deep learning. I also focused on few-shot learning previously.
+                </p>
+            </section>
+            <section class="education">
+                <h3>Education</h3>
+                <ul>
+                    <li class="school"> National University of Defense Technology, M.Eng 
+                        <div style="float: right;">2018.9 - 2020.12 </div> 
+                    </li>
+                    <li  class="school"> Beijing Institute of Technology, B.S
+                        <div style="float: right;">2014.9 - 2018.6 </div>
+                    </li>
+                </ul>
+            </section>
+            <!-- <section class="news">
+                <h3>News</h3>
+                <ul>
+                    <li>One paper is accepted by JSTARS.</li>
+                    <li>One paper is accepted by IVPAI.</li>
+                </ul>
+            </section> -->
+            <section class="publications">
+                <h3>Selected Publications</h3>
+                <ul>
+                    <li>
+                        <img src="./asserts/img/work2_repeat.gif" alt="work2" width="350" height="200"/>
+                        <div class="description">
+                            <h4 class="paperTitle"><a>Few-shot Object Detection with Self-adaptive Attention Network for Remote Sensing Images</a></h4>
+                            <div class="author"><b class="highlight">Zixuan Xiao</b>, Jiahao Qi, Wei Xue, Ping Zhong</div>
+                            <div class="paperGroup">IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 2021</div>
+                            <div class="paperResource"><a class = "textHighlight" href="https://doi.org/10.1109/JSTARS.2021.3078177" target="_blank">[paper]</a> </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./asserts/img/work1.png" alt="work1" width="350" height="200"/>
+                        <div class="description">
+                            <h4 class="paperTitle"><a>Few-shot Object Detection with Feature Attention Highlight Module in Remote Sensing Images</a></h4>
+                            <div class="author"> <b class="highlight">Zixuan Xiao</b>, Ping Zhong, Yuan Quan, Xuping Yin, Wei Xue</div>
+                            <div class="paperGroup">International Conference on Image, Video Processing and Artificial Intelligence, 2020</div>
+                            <div class="paperResource"><a class = "textHighlight" href="https://arxiv.org/abs/2009.01616" target="_blank">[paper]</a> </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./asserts/img/work3.png" alt="work1" width="350" height="200"/>
+                        <div class="description">
+                            <h4 class="paperTitle"><a>Low-Rank Approximation and Multiple Sparse Constraint Modeling for Infrared Low-Flying Fixed-Wing UAV Detection</a></h4>
+                            <div class="author"> Wei Xue, Jiahao Qi, Guoqing Shao, <b class="highlight">Zixuan Xiao</b>, Yu Zhang, Ping Zhong</div>
+                            <div class="paperGroup">IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 2021</div>
+                            <div class="paperResource"><a class = "textHighlight" href="https://doi.org/10.1109/JSTARS.2021.3069032" target="_blank">[paper]</a> </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="Miscellaneous">
+                <h3>Miscellaneous</h3>
+                <ul>
+                    <li>🖼️ &nbsp;&nbsp;My first name is Zixuan which sounds quite poetic in Chinese.</li>
+                    <li>🏊 &nbsp;&nbsp;I love swimming and I swam with my friends at the NUDT swimming pool every week.</li>
+                    <li>🎮 &nbsp;&nbsp;An enthusiast of <a class = "textHighlight" href="https://www.stardewvalley.net/" target="_blank">Stardew Valley</a> and a cloud player of <a class = "textHighlight" href="https://www.dota2.com/home" target="_blank">Dota 2</a>.</li>
+                </ul>
+            </section>
+
+        </main>
+    </div>
+<script>
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
